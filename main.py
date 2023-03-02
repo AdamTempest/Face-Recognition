@@ -24,37 +24,5 @@ for i, (box,point) in enumerate(zip(boxes, points)):
 
 img_draw.save('Result.png')
 
-
-        # array.tolist()
-
 # DOCUMENT
 # help(MTCNN)
-
-# # For a model pretrained on VGGFace2
-# model = InceptionResnetV1(pretrained='vggface2').eval()
-
-#  image_path = "image/Picture.jpeg"
-# img = Image.open(image_path) # get PIL.Image
-
-# If required, create a face detection pipeline using MTCNN:
-# size = img.size()[0] * img.size()[1] # get size in pixel
-# margin = 10
-# mtcnn = MTCNN(image_size=size, margin=margin
-
-# # Create an inception resnet (in eval mode):
-# resnet = InceptionResnetV1(pretrained='vggface2').eval()
-
-
-# image_path = "image/Picture.jpeg"
-# save_path = "saved_pics/"
-# img = Image.open(image_path) # get PIL.Image
-
-# Get cropped and prewhitened image tensor
-# img_cropped = mtcnn(img, save_path=save_path)
-
-# Calculate embedding (unsqueeze to add batch dimension)
-# img_embedding = resnet(img_cropped.unsqueeze(0))
-
-# # Or, if using for VGGFace2 classification
-# resnet.classify = True
-# img_probs = resnet(img_cropped.unsqueeze(0))
